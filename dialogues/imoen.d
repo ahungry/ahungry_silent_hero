@@ -1,7 +1,5 @@
 // First meeting in candlekeep
 EXTEND_BOTTOM imoen 0 IF ~~ THEN
-  // REPLY @1001
-  // GOTO imoen_ash
   REPLY @1001 GOTO imoen_ash // shorthand for the preceding
 END
 
