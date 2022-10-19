@@ -1,1 +1,16 @@
-@1001 =~...(remain silent)...~
+// General silent actions/mannerisms/responses
+@1001 = ~...(remain silent)...~
+@1002 = ~...(nod yes)...~
+@1003 = ~...(shrug my hands)...~
+@1004 = ~...(shake head no)...~
+@1005 = ~...(run away)...~
+
+// Gorion responses
+@1100 = ~Scared? It's alright <CHARNAME>, just nod if you're ready.~
+@1101 = ~Come back when you're ready to go, but do not tarry too long.~
+
+// Imoen
+@1200 = ~Hey, don't give me that look!~
+@1201 = ~Cat got your tongue?  Well, I'm comin' with ya!~
+@1202 = ~Hey, wait for me!~
+@1203 = ~Well?~

@@ -2,8 +2,10 @@ BACKUP ~ahungry_silent_hero/backup~
 AUTHOR ~Ahungry~
 VERSION 1.0
 
-// To learn about another day
-// AUTO_TRA ~%tra_location%/%s~
+AUTO_TRA ~ahungry_silent_hero/lang/%s~
+// per CamDawg (thanks!):
+// ^^ That basically tells WeiDU to default to USING ahungry_silent_hero/lang/%LANGUAGE%/foo.tra~ when you compile foo.d.
+// %LANGUAGE% gets set to the second parameter (english) in the LANGUAGE block selected at install.
 
 LANGUAGE
   ~English~
