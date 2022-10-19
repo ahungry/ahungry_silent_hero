@@ -2,7 +2,15 @@ BACKUP ~ahungry_silent_hero/backup~
 AUTHOR ~Ahungry~
 VERSION 1.0
 
-BEGIN ~Ahungry's Silent Hero~ DESIGNATED 1 LABEL ahungry_silent_hero
-REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) ~Game not supported.~
+AUTO_TRA ~%tra_location%/%s~
+
+LANGUAGE
+  ~English~
+  ~english~
+  ~ahungry_silent_hero/lang/english/game.tra~
+  ~ahungry_silent_hero/lang/english/weidu.tra~
+
+BEGIN @001 DESIGNATED 1 LABEL ahungry_silent_hero
+REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @002
 
 COMPILE ~ahungry_silent_hero/dialogues~
