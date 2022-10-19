@@ -1,0 +1,8 @@
+BACKUP ~ahungry_silent_hero/backup~
+AUTHOR ~Ahungry~
+VERSION 1.0
+
+BEGIN ~Ahungry's Silent Hero~ DESIGNATED 1 LABEL ahungry_silent_hero
+REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) ~Game not supported.~
+
+COMPILE ~ahungry_silent_hero/dialogues~
