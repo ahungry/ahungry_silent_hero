@@ -16,4 +16,10 @@ LANGUAGE
 BEGIN @001 DESIGNATED 1 LABEL ahungry_silent_hero
 REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @002
 
-COMPILE ~ahungry_silent_hero/dialogues~
+OUTER_SET imoen_hello = STATE_WHICH_SAYS 1203 IN ~ahungry_silent_hero/lang/%s/game.tra~ FROM ~imoen2j~
+
+// PRINT ~Ref was: %imoen_hello%~
+
+ACTION_IF ("%imoen_hello%" > "-1") BEGIN
+  COMPILE EVALUATE_BUFFER ~ahungry_silent_hero/dialogues~
+END

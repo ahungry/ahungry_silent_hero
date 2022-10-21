@@ -8,11 +8,11 @@ APPEND imoen IF ~~ THEN BEGIN imoen_ash
 END
 
 // First encounter to invite to party (imoen mod added maybe?)
-EXTEND_BOTTOM imoen2j 6523 IF ~~ THEN
+EXTEND_BOTTOM imoen2j %imoen_hello% IF ~~ THEN
   REPLY @1001 GOTO imoen2j_ash // remain silent
 END
 
-EXTEND_BOTTOM imoen2j 6523 IF ~~ THEN
+EXTEND_BOTTOM imoen2j %imoen_hello% IF ~~ THEN
   REPLY @1005 GOTO imoen2j_ash_run
 END
 
