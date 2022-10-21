@@ -29,3 +29,18 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~cmboun7.dlg~) BEGIN
   PRINT ~Adding silent dialogues for Dark Horizons.~
   COMPILE EVALUATE_BUFFER ~ahungry_silent_hero/dialogues/darkhorizons~
 END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~tic0scrl.itm~) BEGIN
+  PRINT ~Adding silent dialogues for BG1 Romantic Encounters.~
+
+  OUTER_SET phlydia_bg1re_1 = STATE_WHICH_SAYS 10003 IN ~ahungry_silent_hero/lang/%s/game.tra~ FROM ~phlydi~
+  OUTER_SET phlydia_bg1re_2 = STATE_WHICH_SAYS 10004 IN ~ahungry_silent_hero/lang/%s/game.tra~ FROM ~phlydi~
+
+  ACTION_IF ("%phlydia_bg1re_1%" > "-1" AND "%phlydia_bg1re_2%" > "-1") BEGIN
+    PRINT ~Patching phlydia dialog.~
+    COMPILE EVALUATE_BUFFER ~ahungry_silent_hero/dialogues/bg1re/phlydia.d~
+  END
+  ACTION_IF ("%phlydia_bg1re_1%" < "0" OR "%phlydia_bg1re_2%" < "0") BEGIN
+    PRINT ~Skipping phlydia dialog, dialog strings are missing or duplicated.~
+  END
+END

@@ -37,3 +37,15 @@ APPEND carbos_ IF ~~ THEN BEGIN carbos_ash_bye
                  Enemy()~ EXIT
   END
 END
+
+// Candlekeep - Parda
+EXTEND_BOTTOM parda1 0 IF ~~ THEN REPLY @1001 GOTO 2 END
+
+// Candlekeep - Karan
+EXTEND_BOTTOM karan1 0 IF ~~ THEN REPLY @1001 GOTO 1 END
+
+// Candlekeep - Fuller
+EXTEND_BOTTOM fuller 0 IF ~~ THEN REPLY @1001 GOTO 2 END
+
+// Candlekeep - Gatewarden
+EXTEND_BOTTOM gateward 0 IF ~~ THEN REPLY @1001 GOTO 2 END
