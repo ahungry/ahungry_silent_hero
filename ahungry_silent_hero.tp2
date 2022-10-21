@@ -21,5 +21,11 @@ OUTER_SET imoen_hello = STATE_WHICH_SAYS 1203 IN ~ahungry_silent_hero/lang/%s/ga
 // PRINT ~Ref was: %imoen_hello%~
 
 ACTION_IF ("%imoen_hello%" > "-1") BEGIN
-  COMPILE EVALUATE_BUFFER ~ahungry_silent_hero/dialogues~
+  PRINT ~Adding silent dialogues for Core Game.~
+  COMPILE EVALUATE_BUFFER ~ahungry_silent_hero/dialogues/core~
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~cmboun7.dlg~) BEGIN
+  PRINT ~Adding silent dialogues for Dark Horizons.~
+  COMPILE EVALUATE_BUFFER ~ahungry_silent_hero/dialogues/darkhorizons~
 END

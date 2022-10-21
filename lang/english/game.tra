@@ -14,3 +14,10 @@
 @1201 = ~Cat got your tongue?  Well, I'm comin' with ya!~
 @1202 = ~Hey, wait for me!~
 @1203 = ~Sorry I followed ya, but I never get out of Candlekeep and those monks are such a bore. Never any decent coin in their pockets neither. I... I saw Gorion, and I am SO sorry! Kinda figured something bad might happen to you out here. ~
+
+// basic_interactions
+// Shank
+@10000 = ~Not in the mood eh? Lighten up would'ya!  Anyways, care to take a look at what I have in?~
+@10001 = ~Well, you match the description - my apologies, but it's time for you to die.~
+// Carbos
+@10002 = ~Aw well, it hardly matters.  It's your unlucky day, cause you're 'bout to die and I'm 'bout to be rich!~
